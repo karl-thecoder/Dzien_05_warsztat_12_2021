@@ -9,6 +9,9 @@ function server(done) {
     server: {
       baseDir: "./",
     },
+    port: 8080,
+    open: true,
+    notify: false,
   });
   done();
 }

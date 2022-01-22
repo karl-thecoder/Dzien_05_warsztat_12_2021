@@ -1,0 +1,17 @@
+.button {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: $button-radius;
+}
+
+@include mobile {
+  .button {
+    margin: 0 15px;
+    padding: 16px 0;
+    display: block;
+  }
+}

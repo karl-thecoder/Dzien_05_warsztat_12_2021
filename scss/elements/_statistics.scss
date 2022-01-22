@@ -1,0 +1,142 @@
+/* statistics */
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statistics__columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.statistics__header {
+  text-align: center;
+  font: normal normal normal 2rem $font-raleway;
+  letter-spacing: 0;
+  color: #000000;
+  padding: 100px 0 101px 0;
+}
+
+.statistics__column {
+  display: flex;
+  flex-direction: column;
+  margin: 0 80px 149px 80px;
+  align-items: center;
+  text-align: center;
+  font: normal normal normal 1.2rem $font-raleway;
+  letter-spacing: 0;
+  color: $color-gray;
+  justify-content: end;
+  position: relative;
+}
+
+.statistics__column span {
+  text-align: center;
+  font: normal normal 800 1.2rem $font-raleway;
+  letter-spacing: 5.96px;
+  color: #000000;
+  margin: 14px 0 19px 0;
+}
+
+.statistics__image {
+  height: 62.71px;
+  width: 62.71px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+.statistics__image--1 {
+  left: 65px;
+  top: 5px;
+
+}
+
+.statistics__image--2 {
+  left: 105px;
+  top: 2px;
+}
+
+.statistics__image--3 {
+  left: 65px;
+  top: 5px;
+
+}
+
+.statistics__circle {
+  height: 62.71px;
+  width: 62.71px;
+  border: transparent solid 5px;
+  overflow: visible;
+  border-radius: 50%;
+
+}
+
+.statistics__circle--1 {
+  background-color: $color-redish;
+}
+
+.statistics__circle--2 {
+  background-color: $color-primary;
+}
+
+.statistics__circle--3 {
+  background-color: $color-green;
+}
+
+@include mobile {
+  .statistics {
+    margin: 50px 35px auto 50px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .statistics__columns {
+    flex-direction: column;
+  }
+
+  .statistics__header {
+    padding: 20px 0 30px 0;
+  }
+  .statistics__column {
+    margin: 0 80px 30px 80px;
+  }
+
+  .statistics__column span {
+    text-align: center;
+    font: normal normal 800 1.2rem $font-raleway;
+    letter-spacing: 5.96px;
+    color: #000000;
+    margin: 14px 0 19px 0;
+  }
+
+
+  .statistics__image--1 {
+    left: 105px;
+    top: -4px;
+
+  }
+
+  .statistics__image--2 {
+    left: 99px;
+    top: 2px;
+  }
+
+  .statistics__image--3 {
+    left: 103px;
+    top: -3px;
+
+  }
+
+  .statistics__circle {
+    height: 62.71px;
+    width: 62.71px;
+    border: transparent solid 5px;
+    overflow: visible;
+    border-radius: 50%;
+
+  }
+}
