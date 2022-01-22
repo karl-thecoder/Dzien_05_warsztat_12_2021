@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: var(--font-open-sans);
+}
+
+a {
+  text-decoration: none;
+}
+
+.text--logo,
+.footer__link--logo {
+  text-align: left;
+  font: normal normal 300 2em/2.1em $font-raleway;
+  letter-spacing: 0;
+  color: $color-primary;
+}
+
+h2 {
+  font: normal normal normal 2.25rem $font-raleway;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+.container {
+  width: 1352px;
+  margin: 0 auto;
+
+  @include notebook {
+    width: 100%;
+    padding: 15px;
+  }
+}
