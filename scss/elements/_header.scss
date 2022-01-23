@@ -9,7 +9,6 @@
   justify-content: space-between;
   align-items: center;
   z-index: 2;
-  position: relative;
 
 }
 
@@ -110,6 +109,8 @@
   }
   .panel {
     flex-direction: row;
+    position: relative;
+
   }
   .menu-burger {
     display: flex;

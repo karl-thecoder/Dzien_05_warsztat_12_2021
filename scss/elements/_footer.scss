@@ -1,0 +1,45 @@
+/* footer */
+
+.footer {
+  box-shadow: 0 -5px 40px #00000029;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__details {
+  text-align: left;
+  font: normal normal normal 0.5rem $font-open-sans;
+  letter-spacing: 0;
+  color: $color-gray;
+}
+
+.twitter {
+  padding: 0 10px 0 10px;
+}
+
+.facebook {
+  padding: 0 10px 0 10px;
+}
+
+
+@include tablet {
+  .container {
+    padding: 0;
+  }
+
+  .footer {
+    width: 100%;
+  }
+  .twitter {
+    img {
+      margin-top: 30px;
+    }
+  }
+  .facebook {
+    img {
+      margin-top: 30px;
+    }
+  }
+
+}

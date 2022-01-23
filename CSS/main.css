@@ -451,7 +451,6 @@ textarea {
   justify-content: space-between;
   align-items: center;
   z-index: 2;
-  position: relative;
 }
 
 .navigation {
@@ -546,6 +545,7 @@ textarea {
 
   .panel {
     flex-direction: row;
+    position: relative;
   }
 
   .menu-burger {
@@ -779,17 +779,17 @@ h2 {
   }
 
   .statistics__image--1 {
-    left: 105px;
+    left: 70px;
     top: -4px;
   }
 
   .statistics__image--2 {
-    left: 99px;
+    left: 70px;
     top: 2px;
   }
 
   .statistics__image--3 {
-    left: 103px;
+    left: 70px;
     top: -3px;
   }
 
@@ -806,12 +806,11 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--color-gray-light);
+  background-color: #F7F7F7;
 }
 
 .benefits__row {
   width: 80%;
-  height: 40vh;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -850,7 +849,7 @@ h2 {
 }
 
 h2 {
-  font: normal normal normal 2rem var(--font-raleway);
+  font: normal normal normal 2rem "Raleway", sans-serif;
   letter-spacing: 0;
   color: #000000;
 }
@@ -860,7 +859,7 @@ h2 {
 .benefits__header--3 {
   margin: 4rem 0px 36px 0px;
   text-align: left;
-  font: normal normal normal 2rem var(--font-raleway);
+  font: normal normal normal 2rem "Raleway", sans-serif;
   letter-spacing: 0px;
 }
 
@@ -870,7 +869,7 @@ h2 {
   width: 60%;
   background-color: white;
   text-align: left;
-  font: normal normal normal 1.2rem var(--font-open-sans);
+  font: normal normal normal 1.2rem "Open Sans", sans-serif;
   letter-spacing: 0px;
 }
 
@@ -878,27 +877,30 @@ h2 {
   content: "";
   width: 330px;
   height: 4px;
-  background-color: var(--color-redish);
+  background-color: #FB3B64;
   display: block;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .benefits__text--2::after {
   content: "";
   width: 330px;
   height: 4px;
-  background-color: var(--color-primary);
+  background-color: #08A6E4;
   display: block;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .benefits__text--3::after {
   content: "";
   width: 330px;
   height: 4px;
-  background-color: var(--color-green);
+  background-color: #55DFB4;
   display: block;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .side__right--1 {
@@ -919,7 +921,7 @@ h2 {
 }
 
 .shape__row1 {
-  background-color: var(--color-redish);
+  background-color: #FB3B64;
   border-radius: 41px;
   transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
   width: 180px;
@@ -965,12 +967,12 @@ h2 {
 }
 
 .row3__part--2 {
-  background-color: var(--color-gray-light);
+  background-color: #F7F7F7;
   width: 5%;
 }
 
 .row3__part--3 {
-  background-color: var(--color-green);
+  background-color: #55DFB4;
   width: 40%;
   display: flex;
   justify-content: center;
@@ -978,6 +980,125 @@ h2 {
   border: 1px solid #E8E9ED;
 }
 
+@media (max-width: 960px) {
+  .benefits {
+    padding: 50px 0;
+    flex-direction: column;
+  }
+
+  .benefits__row--1 {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .benefits__row--2,
+.benefits__row--3 {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .side {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .benefits__text--1::after,
+.benefits__text--2::after,
+.benefits__row--3::after {
+    content: "";
+    width: 330px;
+    height: 4px;
+    background-color: #FB3B64;
+    display: block;
+    margin-top: 50px;
+    display: none;
+  }
+
+  .benefits__header--1,
+.benefits__header--2,
+.benefits__header--3 {
+    margin: 20px 0 36px 0;
+    text-align: left;
+    font: normal normal normal 2rem "Raleway", sans-serif;
+    letter-spacing: 0;
+  }
+
+  .benefits__header--2 {
+    margin-top: 0;
+  }
+
+  .benefits__text--1,
+.benefits__text--2,
+.benefits__text--3 {
+    width: 90%;
+    text-align: left;
+    font: normal normal normal 1rem "Open Sans", sans-serif;
+    letter-spacing: 0px;
+    margin-bottom: 50px;
+  }
+
+  .side__right--1 {
+    width: 100%;
+    justify-content: center;
+    position: relative;
+  }
+  .side__right--1 .macbook {
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .shape__row1 {
+    background-color: #FB3B64;
+    border-radius: 35px;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    margin: 0 auto;
+    display: none;
+  }
+
+  .iphone {
+    width: 100%;
+    vertical-align: baseline;
+  }
+
+  .side__left--2 {
+    width: 90%;
+    justify-items: center;
+    display: block;
+    margin: 0 auto;
+  }
+  .side__left--2 .shape__row2 {
+    background: #07ACE6 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    transform: scale(0.6, 0.6);
+    position: static;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+  }
+
+  .row3__part--1 {
+    width: 100%;
+  }
+
+  .row3__part--3 {
+    width: 100%;
+  }
+
+  .benefits__text--3::after {
+    content: "";
+    width: 330px;
+    height: 4px;
+    background-color: #55DFB4;
+    display: block;
+    margin-top: 50px;
+    display: none;
+  }
+}
 /* pricing */
 .pricing {
   margin: 100px auto;
@@ -985,6 +1106,13 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.pricing__header {
+  text-align: center;
+  font: normal normal normal 2.25rem "Raleway", sans-serif;
+  letter-spacing: 0px;
+  color: #000000;
 }
 
 .pricing__columns {
@@ -1010,23 +1138,23 @@ h2 {
 
 .pricing__plan {
   font-size: 1.22rem;
-  font-family: var(--font-raleway);
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
 
 .pricing__price {
   font-size: 2.8rem;
-  font-family: var(--font-open-sans);
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   margin-top: 25px;
-  color: var(--accent-color);
+  color: #FB3B64;
 }
 
 .pricing__limited {
   text-align: center;
   margin-top: 15px;
   font-size: 0.75rem;
-  font-family: var(--font-raleway);
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
 
@@ -1056,12 +1184,12 @@ h2 {
   position: relative;
   bottom: -25px;
   font-size: 0.8rem;
-  background-color: var(--accent-color);
+  background-color: #FB3B64;
 }
 
 .pricing__column--1 {
-  --accent-color: var(--color-redish);
-  border: 1px solid var(--color-redish);
+  --accent-color: $color-redish;
+  border: 1px solid #FB3B64;
 }
 
 .pricing__column--1 .pricing__price {
@@ -1069,11 +1197,11 @@ h2 {
 }
 
 .pricing__column--2 {
-  --accent-color: var(--color-primary);
+  --accent-color: $color-primary;
   width: 400px;
   margin: 0 40px;
-  box-shadow: 5px 1px 27px var(--color-primary-shadow);
-  border: 1px solid var(--color-primary);
+  box-shadow: 5px 1px 27px rgba(7, 172, 230, 0.16);
+  border: 1px solid #08A6E4;
 }
 
 .pricing__column--2 .pricing__plan {
@@ -1085,8 +1213,8 @@ h2 {
 }
 
 .pricing__column--3 {
-  --accent-color: var(--color-green);
-  border: 1px solid var(--color-green);
+  --accent-color: $color-green;
+  border: 1px solid #55DFB4;
 }
 
 .button--left,
@@ -1097,8 +1225,8 @@ h2 {
 }
 
 .button--middle {
-  box-shadow: 5px 10px 14px var(--color-primary-shadow);
-  background: var(--color-primary) 0% 0% no-repeat padding-box;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
+  background: #08A6E4 0% 0% no-repeat padding-box;
   width: 165px;
   height: 50px;
   border-radius: 23px;
@@ -1113,6 +1241,44 @@ h2 {
   align-items: center;
 }
 
+@media (max-width: 960px) {
+  .pricing {
+    margin: 50px auto;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .pricing__columns {
+    flex-direction: column;
+  }
+  .pricing__columns .pricing__column {
+    width: 85%;
+    margin: 20px 0 20px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .pricing__column:nth-child(2) {
+    width: 95%;
+  }
+
+  .pricing__column .button {
+    position: relative;
+    bottom: -25px;
+    left: 55px;
+    font-size: 0.8rem;
+    background-color: #FB3B64;
+  }
+
+  .pricing__top,
+.pricing__specs {
+    width: 50%;
+  }
+
+  .pricing__specs {
+    text-align: left;
+  }
+}
 /* contact */
 .contact {
   padding: 80px 100px 100px;
@@ -1125,11 +1291,11 @@ h2 {
 }
 
 .contact__column--1 {
-  margin-left: 300px;
+  margin-left: 150px;
 }
 
 .contact__column--2 {
-  margin-right: 300px;
+  margin-right: 150px;
 }
 
 .contact__header {
@@ -1146,13 +1312,13 @@ h2 {
 .contact__info {
   display: flex;
   justify-content: flex-start;
-  color: var(--color-gray);
+  color: #A5A5A5;
   align-items: center;
 }
 
 .details__email,
 .details__telephone {
-  color: var(--color-gray);
+  color: #A5A5A5;
   font-weight: 500;
   text-decoration: none;
 }
@@ -1184,7 +1350,7 @@ h2 {
 .form__label {
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--color-primary);
+  color: #08A6E4;
   line-height: 0.9rem;
   letter-spacing: 3px;
   font-size: 0.5rem;
@@ -1192,10 +1358,10 @@ h2 {
 
 .form__input {
   border: none;
-  border-bottom: 1px solid var(--color-grey);
+  border-bottom: 1px solid #A5A5A5;
   background-color: transparent;
   line-height: 2.625rem;
-  border-bottom: 1px solid var(--color-gray);
+  border-bottom: 1px solid #A5A5A5;
 }
 
 .form__consent {
@@ -1226,7 +1392,7 @@ h2 {
   height: 25px;
   width: 25px;
   background-color: white;
-  border: 1px solid var(--color-gray);
+  border: 1px solid #A5A5A5;
   border-radius: 4px;
 }
 
@@ -1240,7 +1406,7 @@ h2 {
 .form__checkbox .consent__text {
   margin: 0 10px;
   font-size: 0.7rem;
-  color: var(--color-gray);
+  color: #A5A5A5;
   line-height: 17px;
 }
 
@@ -1254,11 +1420,32 @@ h2 {
 .button--form {
   width: 226px;
   height: 57px;
-  background: var(--color-primary) 0% 0% no-repeat padding-box;
-  box-shadow: 5px 10px 14px var(--color-primary-shadow);
+  background: #08A6E4 0% 0% no-repeat padding-box;
+  box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
   border-radius: 35px;
 }
 
+@media (max-width: 1024px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 15px;
+  }
+
+  .contact__column {
+    width: 80%;
+    margin: 0;
+  }
+
+  .contact__column--2 {
+    margin-top: 30px;
+    border-bottom: #F7F7F7 1px solid;
+  }
+
+  .details__telephone {
+    display: flex;
+  }
+}
 /* footer */
 .footer {
   box-shadow: 0 -5px 40px #00000029;
@@ -1269,9 +1456,9 @@ h2 {
 
 .footer__details {
   text-align: left;
-  font: normal normal normal 0.5rem var(--font-open-sans);
+  font: normal normal normal 0.5rem "Open Sans", sans-serif;
   letter-spacing: 0;
-  color: var(--color-gray);
+  color: #A5A5A5;
 }
 
 .twitter {
@@ -1282,6 +1469,23 @@ h2 {
   padding: 0 10px 0 10px;
 }
 
+@media (max-width: 1024px) {
+  .container {
+    padding: 0;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .twitter img {
+    margin-top: 30px;
+  }
+
+  .facebook img {
+    margin-top: 30px;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
